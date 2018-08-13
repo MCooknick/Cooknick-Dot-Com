@@ -1,0 +1,185 @@
+.App{
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0px;
+}
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition: flex 0.4s ease-in-out;
+    white-space: nowrap;
+}
+.info{
+    flex: 1;
+    background-color: white;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+.hidden{
+  flex: 0
+}
+
+.active{
+  flex: 8;
+}
+
+.col-home{
+    flex:2;
+}
+
+.view-plusit{
+    background-color: #FCAB41;
+  }
+.view-accutype{
+    background-color: #5C9BF2;
+  }
+.view-thickit{
+    background-color: #5FAC5F;
+  }
+
+h1{
+  font-size:24px;font-weight:300; line-height: 16px; font-family: 'Roboto Slab'
+}
+h2{
+  font-size:18px;font-weight:300; line-height: 16px;
+}
+p{
+  font-size: 14px; line-height: 18px;
+}
+a{
+  text-decoration: underline;
+  color: black;
+}
+a:hover{
+  text-decoration: none;
+}
+.hide-desk{
+  display: block;
+}
+.hide-mobile{
+  display: none;
+}
+.mob-video{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.mob-video video{
+  object-fit: cover; 
+  height: inherit;
+  position: absolute;
+}
+.x-mark-container{
+  justify-content: flex-end;
+}
+.x-mark{
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+.x-mark:hover{
+  transform: rotate(-90deg);
+}
+.app-name{
+  font-size: 24px;
+  color: white;
+  font-family: 'Roboto'
+}
+.app-title{
+  font-size: 24px;
+  padding: 16px 0px;
+  font-weight: 300;
+  font-family: 'Roboto Slab'
+}
+.tech-details{
+  font-size: 18px;
+  font-family: 'Roboto Slab';
+  padding: 8px 0px 8px;
+}
+.info-inner{
+  width: 80%;
+  text-align: left;
+  margin: 0 auto;
+  line-height: 18px;
+  overflow:hidden;
+}
+.info-container{
+  width: 100%;
+  margin: 0px;
+  height: 100%;
+  display:inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-inner p{
+  margin: 0px;
+}
+.info-title-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+.info-title-container div{
+  flex: 1;
+  display: flex;
+  align-items:center;
+}
+hr{
+  border:1px solid #5C9BF2;
+  width: 90%;
+  margin-left:0;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  .App{
+    height:100vh;
+    width:100%;
+    margin:0;
+    flex-direction: row;
+  }
+  .col{
+    box-shadow: inset 1px 0px 6px 0px rgba(0,0,0,0.3);
+  }
+  .hide-desk{
+    display: none;
+  }
+  .hide-mobile{
+    display: flex;
+  }
+  .col-home{
+    flex:1;
+  }
+  .active{
+    flex: 1;
+  }
+  
+  video{
+
+    width: 80%; 
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+  }
+  ul{
+    list-style: none;
+    margin-top: 5px;
+    padding-left:0px;
+  }
+} 
+
+
+
