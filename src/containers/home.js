@@ -18,6 +18,8 @@ const Home = ({onSelection, activeview}) => {
 					<p>
 						<a href="https://twitter.com/mikecooknick">Twitter</a> | 
 						<a href="mailto:business@cooknick.com">business@cooknick.com</a>
+						<br/>
+						<a href="https://github.com/cooknick">GitHub</a>
 					</p>
 				</div>
 			</div>
