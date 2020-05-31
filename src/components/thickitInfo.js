@@ -21,7 +21,7 @@ const ThickitInfo = ({onSelection, activeview}) => {
 			
 				<div className="x-mark-container">
 					<span onClick={onSelection}>
-						<img src="./assets/x-mark-black.png" className="x-mark" width="20"/>
+						<img alt="close" src="./assets/x-mark-black.png" className="x-mark" width="20"/>
 					</span>
 				</div>
 			</div>
