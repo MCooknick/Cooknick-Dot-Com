@@ -1,12 +1,42 @@
-.App{
-  font-family: 'Roboto';
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0px;
+.App {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
 }
-.col {
-    flex: 1;
+h1 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 16px;
+    font-family: 'Roboto Slab'
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Containers */
+
+.home {
+    height: 40vh;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,170 +46,258 @@
     transition: flex 0.4s ease-in-out;
     white-space: nowrap;
 }
-.info{
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+/* Sliders */
+
+.phoneRow > div{
+    height: 20vh;
+}
+
+.projectWrapper {
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+}
+.slideReel {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    height: inherit;
+    cursor: pointer;
+    transition: left 400ms ease-in-out;
+}
+.infoHidden {
+    left: 0%;
+}
+.infoVisible {
+    left: -100%;
+}
+.videoPreview {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.projectPreview, .projectInfo{
+    flex: 1;
+    height: inherit;
+}
+
+.projectPreview, .projectPreview > div{
+    display: flex;
+    flex: 1;
+    color: white;
+    height: inherit;
+    overflow: hidden;
+    width: auto;
+    transition: flex 400ms ease-in-out;
+    white-space: nowrap;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.projectInfo, .projectInfo > div{
+    display: flex;
+    flex: 1;
+    color: black;
+    height: inherit;
+    overflow: hidden;
+    width: 100%;
+    transition: flex 400ms ease-in-out;
+    white-space: nowrap;
+}
+
+.info {
     flex: 1;
     background-color: white;
     overflow: hidden;
     white-space: nowrap;
-  }
-
-.hidden{
-  flex: 0
 }
 
-.active{
-  flex: 8;
+.hide-desk {
+    display: block;
 }
 
-.col-home{
-    flex:2;
-}
-
-.view-plusit{
-    background-color: #FCAB41;
-  }
-.view-accutype{
-    background-color: #5C9BF2;
-  }
-.view-thickit{
-    background-color: #5FAC5F;
-  }
-
-h1{
-  font-size:24px;font-weight:300; line-height: 16px; font-family: 'Roboto Slab'
-}
-h2{
-  font-size:18px;font-weight:300; line-height: 16px;
-}
-p{
-  font-size: 14px; line-height: 18px;
-}
-a{
-  text-decoration: underline;
-  color: black;
-}
-a:hover{
-  text-decoration: none;
-}
-.hide-desk{
-  display: block;
-}
-.hide-mobile{
-  display: none;
-}
-.mob-video{
-  width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 300px;
-  overflow: hidden;
-}
-.mob-video video{
-  object-fit: cover; 
-  height: inherit;
-  position: absolute;
-}
-.x-mark-container{
-  justify-content: flex-end;
-}
-.x-mark{
-  transition: transform 0.2s ease-in-out;
-  cursor: pointer;
-}
-.x-mark:hover{
-  transform: rotate(-90deg);
-}
-.app-name{
-  font-size: 24px;
-  color: white;
-  font-family: 'Roboto'
-}
-.app-title{
-  font-size: 24px;
-  padding: 16px 0px;
-  font-weight: 300;
-  font-family: 'Roboto Slab'
-}
-.tech-details{
-  font-size: 18px;
-  font-family: 'Roboto Slab';
-  padding: 8px 0px 8px;
-}
-.info-inner{
-  width: 80%;
-  text-align: left;
-  margin: 0 auto;
-  line-height: 18px;
-  overflow:hidden;
-}
-.info-container{
-  width: 100%;
-  margin: 0px;
-  height: 100%;
-  display:inline-flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.info-inner p{
-  margin: 0px;
-}
-.info-title-container{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  overflow: hidden;
-}
-.info-title-container div{
-  flex: 1;
-  display: flex;
-  align-items:center;
-}
-hr{
-  border:1px solid #5C9BF2;
-  width: 90%;
-  margin-left:0;
-}
-
-
-
-@media only screen and (min-width: 600px) {
-  .App{
-    height:100vh;
-    width:100%;
-    margin:0;
-    flex-direction: row;
-  }
-  .col{
-    box-shadow: inset 1px 0px 6px 0px rgba(0,0,0,0.3);
-  }
-  .hide-desk{
+.hide-mobile {
     display: none;
-  }
-  .hide-mobile{
+}
+
+/* Previews */
+
+.mob-video {
+    width: 100%;
+    background-color: white;
     display: flex;
-  }
-  .col-home{
-    flex:1;
-  }
-  .active{
-    flex: 1;
-  }
-  
-  video{
-
-    width: 80%; 
-    margin: 0 auto;
-    cursor: pointer;
+    justify-content: center;
     position: relative;
-  }
-  ul{
-    list-style: none;
-    margin-top: 5px;
-    padding-left:0px;
-  }
-} 
+    height: 300px;
+    overflow: hidden;
+}
 
+.mob-video video {
+    object-fit: cover;
+    height: inherit;
+    position: absolute;
+}
 
+/* Info */
 
+.x-mark-container {
+    justify-content: flex-end;
+}
+
+.x-mark {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.x-mark:hover {
+    transform: rotate(-90deg);
+}
+
+.app-name {
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto'
+}
+
+.app-title {
+    font-size: 20px;
+    padding: 16px 0px;
+    font-weight: 300;
+    font-family: 'Roboto Slab'
+}
+.app-title a {
+    font-size: 12px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.app-title a:hover {
+    text-decoration: underline;
+}
+
+.tech-details {
+    font-size: 16px;
+    font-family: 'Roboto Slab';
+    padding: 8px 0px 8px;
+}
+
+.info-inner {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+.info-container {
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-inner p {
+    margin: 0px;
+}
+
+.info-title-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.info-title-container div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid black;
+    width: 90%;
+    margin-left: 0;
+}
+
+/* Project Specific */
+.paintByCountyView {
+    background: #041045;
+}
+
+.memeCasedPreview {
+    background: white;
+}
+
+.plusItPreview {
+    background: #FCAB41;
+    height: inherit;
+}
+
+.accutypePreview {
+    background: #5C9BF2;
+    height: inherit;
+}
+
+.thickitPreview {
+    background: #5FAC5F;
+    height: inherit;
+}
+
+/* Desktop */
+@media only screen and (min-width: 950px) {
+    .App {
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        flex-direction: row;
+    }
+    .slideReel{
+        min-height: 40vh;
+    }
+    .projectWrapper{
+        height: auto;
+    }
+    .hide-desk {
+        display: none;
+    }
+    .hide-mobile {
+        display: flex;
+    }
+    .home{
+        height: inherit;
+        width: 25%;
+    }
+    .webRow, .phoneRow{
+        display: flex;
+        flex-direction: row;
+    }
+    .webRow {
+        height: 40vh;
+    }
+    .phoneRow > div{
+        height: 80vh;
+    }
+    video {
+        width: 80%;
+        margin: 0 auto;
+        cursor: pointer;
+        position: relative;
+    }
+    ul {
+        list-style: none;
+        margin-top: 5px;
+        padding-left: 0px;
+    }
+}
