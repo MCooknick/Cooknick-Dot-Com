@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-export default function ProjectWrapper({ preview, info }) {
+export default function ProjectWrapper({ className, preview, info }) {
     const [active, setActive] = useState(false);
 
     const previewActive = active ? 'infoVisible' : 'infoHidden';
 
     return (
-        <div className="projectWrapper">
+        <div className={`${className} projectWrapper`}>
             <div className={`slideReel ${previewActive}`}>
                 <div className="projectPreview" onClick={() => setActive(!active)}>
                     {preview}

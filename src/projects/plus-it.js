@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectInfo from '../components/project-info'
-import ProjectVideo from '../components/project-video'
+import PreviewWrapper from '../components/project-preview'
 
 const title = 'Plus It';
 
@@ -12,7 +12,7 @@ const technicalDetails = [
 
 const PlusItPreview = () => (
     <div className="plusItPreview">
-        <ProjectVideo src="./assets/video/plusit.mp4"/>
+        <PreviewWrapper vidSrc="./assets/video/plusit.mp4"/>
     </div>
 )
 

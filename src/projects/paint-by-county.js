@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectInfo from '../components/project-info'
+import PreviewWrapper from '../components/project-preview'
 
 const title = 'Paint By County';
 
@@ -10,7 +11,9 @@ const technicalDetails = [
 ]
 
 const PaintByCountyPreview = () => (
-    <div className="paintByCountyView" style={{ backgroundImage: "url(../assets/img/paint-by-county-still.png)" }} />
+    <div className="paintByCountyPreview">
+        <PreviewWrapper imgSrc="../assets/img/paint-by-county-still.png"/>
+    </div>
 )
 
 const PaintByCountyInfo = () => (

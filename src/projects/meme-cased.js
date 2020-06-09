@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectInfo from '../components/project-info'
-import ProjectVideo from '../components/project-video'
+import PreviewWrapper from '../components/project-preview'
 
 const title = 'Meme Cased';
 
@@ -10,7 +10,7 @@ const technicalDetails = [
 
 const MemeCasedPreview = () => (
     <div className="memeCasedPreview">
-        <ProjectVideo src="./assets/video/meme-cased.mp4"/>
+        <PreviewWrapper vidSrc="../assets/video/meme-cased.mp4" imgSrc="../assets/img/meme-cased-still.png"/>
     </div>
 )
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectInfo from '../components/project-info'
-import ProjectVideo from '../components/project-video'
+import ProjectVideo from '../components/project-preview'
 
 const title = 'Accutype';
 
@@ -13,7 +13,7 @@ const technicalDetails = [
 
 const AccutypePreview = () => (
     <div className="accutypePreview">
-        <ProjectVideo src="./assets/video/accutype.mp4"/>
+        <ProjectVideo vidSrc="./assets/video/accutype.mp4"/>
     </div>
 )
 

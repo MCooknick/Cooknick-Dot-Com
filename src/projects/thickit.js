@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectInfo from '../components/project-info'
-import ProjectVideo from '../components/project-video'
+import ProjectVideo from '../components/project-preview'
 
 const title = 'Thickit';
 
@@ -14,7 +14,7 @@ const technicalDetails = [
 
 const ThickitPreview = () => (
     <div className="thickitPreview">
-        <ProjectVideo src="./assets/video/thickit.mp4"/>
+        <ProjectVideo vidSrc="./assets/video/thickit.mp4"/>
     </div>
 )
 

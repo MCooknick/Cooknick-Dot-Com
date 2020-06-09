@@ -11,13 +11,13 @@ import ProjectWrapper from '../components/projectWrapper'
 const Portfolio = () => (
     <div className="portfolio">
         <div className="webRow">
-            <ProjectWrapper preview={<PaintByCountyPreview />} info={<PaintByCountyInfo />} />
-            <ProjectWrapper preview={<MemeCasedPreview />} info={<MemeCasedInfo />} />
+            <ProjectWrapper className="paintByCountyWrapper" preview={<PaintByCountyPreview />} info={<PaintByCountyInfo />} />
+            <ProjectWrapper className="memeCasedWrapper" preview={<MemeCasedPreview />} info={<MemeCasedInfo />} />
         </div>
         <div className="phoneRow hide-mobile">
-            <ProjectWrapper preview={<PlusItPreview />} info={<PlusItInfo />} />
-            <ProjectWrapper preview={<AccutypePreview />} info={<AccutypeInfo />} />
-            <ProjectWrapper preview={<ThickitPreview />} info={<ThickitInfo />} />
+            <ProjectWrapper className="plusItWrapper" preview={<PlusItPreview />} info={<PlusItInfo />} />
+            <ProjectWrapper className="accutypeWrapper" preview={<AccutypePreview />} info={<AccutypeInfo />} />
+            <ProjectWrapper className="thickitWrapper" preview={<ThickitPreview />} info={<ThickitInfo />} />
         </div>
     </div>
 )
