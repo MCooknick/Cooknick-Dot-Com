@@ -13,7 +13,7 @@ const technicalDetails = [
 
 const AccutypePreview = () => (
     <div className="accutypePreview">
-        <ProjectVideo vidSrc="./assets/video/accutype.mp4"/>
+        <ProjectVideo isPhoneApp={true} imgSrc="./assets/img/accutype-poster.jpg" vidSrc="./assets/video/accutype.mp4" />
     </div>
 )
 

@@ -86,6 +86,10 @@ a:hover {
     text-align: center;
     width: 100%;
 }
+.isPhoneApp video {
+    border-radius: 3px;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.8);
+}
 .imagePreview {
     height: 100%;
     width: 100%;
@@ -105,6 +109,7 @@ a:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .projectInfo, .projectInfo > div{
@@ -116,6 +121,7 @@ a:hover {
     width: 100%;
     transition: flex 400ms ease-in-out;
     white-space: nowrap;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .info {
@@ -239,7 +245,9 @@ hr {
     border: 1px solid #041045;
 }
 .paintByCountyPreview {
-    background: #041045;
+    /* background: #041045; */
+    background: #050e3f;
+    filter: brightness(1.5);
 }
 .memeCasedWrapper hr {
     border: 1px solid black;
@@ -251,14 +259,14 @@ hr {
     border: 1px solid #FCAB41;
 }
 .plusItPreview {
-    background: #FCAB41;
+    background: rgb(252, 171, 65);
     height: inherit;
 }
 .accutypeWrapper hr {
     border: 1px solid #5C9BF2;
 }
 .accutypePreview {
-    background: #5C9BF2;
+    background: rgb(92, 155, 242);
     height: inherit;
 }
 .thickitWrapper hr {
