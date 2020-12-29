@@ -93,12 +93,24 @@ video {
 .loader {
     width: 100%;
     text-align: center;
+    font-size: 70px;
+    animation-duration: 2s;
+    animation-name: spin;
+    font-family: 'Roboto Slab';
+    animation-iteration-count: infinite;
+    opacity: 1;
+    transition: opacity 1;
 }
 .loader.hide {
     display: none;
-}
-.isLoading {
+    opacity: 0;
+}  
+.videoPreview.isLoading {
     display: none;
+}
+.videoPreview {
+    animation-duration: 0.5s;
+    animation-name: fadeIn;
 }
 .imagePreview {
     height: 100%;
@@ -255,9 +267,7 @@ hr {
     border: 1px solid #041045;
 }
 .paintByCountyPreview {
-    background:rgb(253, 213, 132);
-    /* background: #050e3f; */
-   
+    background:#ffe09e
 }
 .paintByCountyPreview video {
     filter: brightness(1.75);
@@ -266,7 +276,11 @@ hr {
     border: 1px solid black;
 }
 .memeCasedPreview {
-    background: white;
+    background: #f76053;
+}
+.memeCasedPreview .previewWrapper {
+    width: 85%;
+    margin: 0 auto;
 }
 .plusItWrapper hr {
     border: 1px solid #FCAB41;
@@ -349,4 +363,98 @@ hr {
     .webRow video {
         width: 90%;
     }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+  }
 }

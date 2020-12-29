@@ -17,7 +17,7 @@ const PreviewWrapper = ({ vidSrc }) => {
 		<div className="previewWrapper">
 
 			<div className={`hide-moble loader ${isLoading ? '' : 'hide'}`}>
-				<p>Loading</p>
+				<span>C</span>
 			</div>
 
 			{vidSrc &&
