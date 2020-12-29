@@ -86,7 +86,7 @@ a:hover {
     text-align: center;
     width: 100%;
 }
-.isPhoneApp video {
+video {
     border-radius: 3px;
     box-shadow:0px 0px 10px rgba(0, 0, 0, 0.8);
 }
@@ -245,9 +245,12 @@ hr {
     border: 1px solid #041045;
 }
 .paintByCountyPreview {
-    /* background: #041045; */
-    background: #050e3f;
-    filter: brightness(1.5);
+    background:rgb(253, 213, 132);
+    /* background: #050e3f; */
+   
+}
+.paintByCountyPreview video {
+    filter: brightness(1.75);
 }
 .memeCasedWrapper hr {
     border: 1px solid black;

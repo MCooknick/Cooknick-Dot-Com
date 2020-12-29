@@ -12,7 +12,7 @@ const technicalDetails = [
 
 const PaintByCountyPreview = () => (
     <div className="paintByCountyPreview">
-        <PreviewWrapper imgSrc="../assets/img/paint-by-county-still.png" vidSrc="../assets/video/paint-by-county.mp4" />
+        <PreviewWrapper vidSrc="../assets/video/paint-by-county.mp4" />
     </div>
 )
 

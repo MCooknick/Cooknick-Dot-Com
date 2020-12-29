@@ -12,7 +12,7 @@ const technicalDetails = [
 
 const PlusItPreview = () => (
     <div className="plusItPreview">
-        <PreviewWrapper isPhoneApp={true} imgSrc="./assets/img/plus-it-poster.jpg" vidSrc="./assets/video/plus-it.mp4" />
+        <PreviewWrapper vidSrc="./assets/video/plus-it.mp4" />
     </div>
 )
 
