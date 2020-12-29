@@ -90,6 +90,16 @@ video {
     border-radius: 3px;
     box-shadow:0px 0px 10px rgba(0, 0, 0, 0.8);
 }
+.loader {
+    width: 100%;
+    text-align: center;
+}
+.loader.hide {
+    display: none;
+}
+.isLoading {
+    display: none;
+}
 .imagePreview {
     height: 100%;
     width: 100%;

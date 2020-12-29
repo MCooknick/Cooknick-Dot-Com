@@ -1,6 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
-const PreviewWrapper = ({ vidSrc, imgSrc }) => {
+const PreviewWrapper = ({ vidSrc }) => {
+	const [isLoading, setIsLoading] = useState(true);
+
 	const videoPlayer = useRef(null)
 
 	const playVideo = () => {
@@ -14,16 +16,19 @@ const PreviewWrapper = ({ vidSrc, imgSrc }) => {
 	return (
 		<div className="previewWrapper">
 
-			<div className={`${vidSrc ? 'hide-desk ' : ''} imagePreview`} style={{ backgroundImage: `url(${imgSrc})` }} />
+			<div className={`hide-moble loader ${isLoading ? '' : 'hide'}`}>
+				<p>Loading</p>
+			</div>
 
 			{vidSrc &&
-				<div className="hide-moble videoPreview">
+				<div className={`hide-moble videoPreview ${isLoading ? 'isLoading' : ''}`}>
 					<video
 						ref={videoPlayer}
 						className="hide-mobile"
 						loop
 						muted
 						playsinline
+						onLoadedData={() => setIsLoading(false)}
 						onMouseEnter={() => playVideo()}
 						onMouseLeave={() => pauseVideo()} >
 						<source src={vidSrc} type="video/mp4" />
