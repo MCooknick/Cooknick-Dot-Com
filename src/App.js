@@ -1,14 +1,18 @@
 import React from 'react';
+import { Route, Routes } from 'react-router';
 import './App.css';
 
-import Home from './containers/home';
-import Portfolio from './containers/portfolio';
+import SplashPage from './pages/SplashPage';
+import WebPage from './pages/WebPage';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      <Portfolio />
+    <div>
+      <Routes>
+        <Route path='/' element={<WebPage />} />
+        <Route path="/splash" element={<SplashPage />} />
+        <Route path='/web' element={<WebPage />} />
+      </Routes>
     </div>
   )
 }
