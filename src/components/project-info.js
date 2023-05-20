@@ -5,15 +5,15 @@ const ProjectInfo = ({ title, technicalDetails, link }) => (
         <div className="info-inner info-title-container">
             <div>
                 <p className="app-title">
-                    {title} 
-                    {link ? 
-                        <a target="_blank" href={link}>Visit</a> 
+                    {title}
+                    {link ?
+                        <a target="_blank" href={link}>Visit</a>
                         : null}
                 </p>
             </div>
             <div className="x-mark-container" >
                 <span>
-                    <img alt="close" src="./assets/img/x-mark-black.png" className="x-mark" width="20" />
+                    <img alt="close" src="./assets/img/x-mark-black.png" className="x-mark" width="20" height="20" />
                 </span>
             </div>
         </div>

@@ -10,7 +10,7 @@ const technicalDetails = [
 
 const MemeCasedPreview = () => (
     <div className="memeCasedPreview">
-        <PreviewWrapper vidSrc="../assets/video/meme-cased.mp4" imgSrc="../assets/img/meme-cased-still.png"/>
+        <PreviewWrapper vidSrc="../assets/video/meme-cased.mp4" />
     </div>
 )
 

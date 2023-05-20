@@ -91,6 +91,32 @@ a:hover {
     text-align: center;
     width: 100%;
 }
+video {
+    border-radius: 3px;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.loader {
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    animation-duration: 2s;
+    animation-name: spin;
+    font-family: 'Roboto Slab';
+    animation-iteration-count: infinite;
+    opacity: 1;
+    transition: opacity 1;
+}
+.loader.hide {
+    display: none;
+    opacity: 0;
+}  
+.videoPreview.isLoading {
+    display: none;
+}
+.videoPreview {
+    animation-duration: 0.5s;
+    animation-name: fadeIn;
+}
 .imagePreview {
     height: 100%;
     width: 100%;
@@ -110,6 +136,7 @@ a:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .projectInfo, .projectInfo > div{
@@ -121,6 +148,7 @@ a:hover {
     width: 100%;
     transition: flex 400ms ease-in-out;
     white-space: nowrap;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .info {
@@ -244,26 +272,33 @@ hr {
     border: 1px solid #041045;
 }
 .paintByCountyPreview {
-    background: #041045;
+    background:#ffe09e
+}
+.paintByCountyPreview video {
+    filter: brightness(1.75);
 }
 .memeCasedWrapper hr {
     border: 1px solid black;
 }
 .memeCasedPreview {
-    background: white;
+    background: #f76053;
+}
+.memeCasedPreview .previewWrapper {
+    width: 85%;
+    margin: 0 auto;
 }
 .plusItWrapper hr {
     border: 1px solid #FCAB41;
 }
 .plusItPreview {
-    background: #FCAB41;
+    background: rgb(252, 171, 65);
     height: inherit;
 }
 .accutypeWrapper hr {
     border: 1px solid #5C9BF2;
 }
 .accutypePreview {
-    background: #5C9BF2;
+    background: rgb(92, 155, 242);
     height: inherit;
 }
 .thickitWrapper hr {
@@ -333,4 +368,98 @@ hr {
     .webRow video {
         width: 90%;
     }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+  }
 }

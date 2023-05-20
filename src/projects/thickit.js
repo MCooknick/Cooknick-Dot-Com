@@ -14,7 +14,7 @@ const technicalDetails = [
 
 const ThickitPreview = () => (
     <div className="thickitPreview">
-        <ProjectVideo vidSrc="./assets/video/thickit.mp4"/>
+        <ProjectVideo vidSrc="./assets/video/thickit.mp4" />
     </div>
 )
 
