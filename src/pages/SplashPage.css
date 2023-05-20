@@ -1,0 +1,33 @@
+.splash {
+  background: #111;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.splash-content {
+  margin: 20%;
+}
+.splash-navigation {
+  display: flex; 
+}
+.splash-nav-element {
+  margin-right: 10%;
+  cursor: pointer;
+  color: white;
+}
+.splash-nav-element-disabled {
+  color: #555;
+  cursor: initial;
+  margin-right: 10%;
+}
+.splash-nav-element:hover {
+  text-decoration: underline;
+  color: white;
+}
+/* .splash-nav-element-disabled:hover {
+  text-decoration: none;
+  color: #555;
+} */
