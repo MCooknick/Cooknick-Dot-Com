@@ -4,6 +4,7 @@ import './App.css';
 
 import SplashPage from './pages/SplashPage';
 import WebPage from './pages/WebPage';
+import Blog from './blog';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
         <Route path='/' element={<WebPage />} />
         <Route path="/splash" element={<SplashPage />} />
         <Route path='/web' element={<WebPage />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='*' element={<SplashPage />} />
       </Routes>
     </div>
   )
